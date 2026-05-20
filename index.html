@@ -1,268 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Vinita Sharma | Portfolio</title>
+  <base href="/">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
 
-    <style>
-        *{
-          margin:0;
-          padding:0;
-          box-sizing:border-box;
-          font-family:'Poppins',sans-serif;
-        }
+  <!-- SEO Meta Tags -->
+  <title>Vinita Sharma — Flutter & Cross-Platform Developer</title>
+  <meta name="description" content="Portfolio of Vinita Sharma — A passionate Flutter & Cross-Platform Developer crafting high-performance, responsive mobile and web experiences.">
+  <meta name="keywords" content="Vinita Sharma, Flutter Developer, Cross-Platform Developer, Flutter Web Specialist, Software Engineer, Portfolio, Dart, Firebase, .NET">
+  <meta name="author" content="Vinita Sharma">
 
-        body{
-          background:#0f172a;
-          color:white;
-          overflow-x:hidden;
-        }
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vinita Sharma — Flutter & Cross-Platform Developer">
+  <meta property="og:description" content="Premium portfolio showcasing Flutter, Flutter Web, and cross-platform application development.">
+  <meta property="og:type" content="website">
 
-        header{
-          min-height:100vh;
-          display:flex;
-          align-items:center;
-          justify-content:center;
-          text-align:center;
-          padding:20px;
-          background:linear-gradient(135deg,#0f172a,#1e293b);
-        }
+  <!-- iOS meta tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Vinita Sharma">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-        .hero{
-          max-width:800px;
-        }
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
 
-        .hero h1{
-          font-size:70px;
-          margin-bottom:15px;
-          font-weight:700;
-        }
+  <!-- Preconnect Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        .hero span{
-          color:#38bdf8;
-        }
+  <link rel="manifest" href="manifest.json">
 
-        .hero p{
-          font-size:20px;
-          color:#cbd5e1;
-          line-height:1.7;
-          margin-bottom:35px;
-        }
-
-        .btn{
-          display:inline-block;
-          padding:14px 32px;
-          background:#38bdf8;
-          color:#0f172a;
-          text-decoration:none;
-          border-radius:12px;
-          font-weight:600;
-          transition:0.3s;
-        }
-
-        .btn:hover{
-          transform:translateY(-3px);
-          background:#7dd3fc;
-        }
-
-        section{
-          padding:90px 10%;
-        }
-
-        .title{
-          font-size:38px;
-          margin-bottom:40px;
-          text-align:center;
-        }
-
-        .cards{
-          display:grid;
-          grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-          gap:25px;
-        }
-
-        .card{
-          background:#1e293b;
-          padding:30px;
-          border-radius:20px;
-          transition:0.3s;
-          border:1px solid rgba(255,255,255,0.05);
-        }
-
-        .card:hover{
-          transform:translateY(-8px);
-          background:#334155;
-        }
-
-        .card h3{
-          margin-bottom:15px;
-          color:#38bdf8;
-        }
-
-        .card p{
-          color:#cbd5e1;
-          line-height:1.7;
-        }
-
-        .skills{
-          display:flex;
-          flex-wrap:wrap;
-          justify-content:center;
-          gap:15px;
-        }
-
-        .skill{
-          padding:12px 20px;
-          background:#1e293b;
-          border-radius:50px;
-          border:1px solid rgba(255,255,255,0.08);
-        }
-
-        footer{
-          padding:30px;
-          text-align:center;
-          color:#94a3b8;
-          border-top:1px solid rgba(255,255,255,0.08);
-        }
-
-        @media(max-width:768px){
-
-          .hero h1{
-            font-size:42px;
-          }
-
-          .hero p{
-            font-size:16px;
-          }
-
-          .title{
-            font-size:30px;
-          }
-        }
-
-    </style>
+  <!-- Loading styles -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0A0A0F;
+      overflow: hidden;
+    }
+    .loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      font-family: 'Inter', sans-serif;
+      color: #9B9BB4;
+    }
+    .loading .spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid #1A1A2E;
+      border-top-color: #6C63FF;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    .loading p { margin-top: 20px; font-size: 14px; letter-spacing: 2px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
 </head>
-
 <body>
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+    <p>LOADING</p>
+  </div>
 
-<header>
-    <div class="hero">
-        <h1>Hi, I'm <span>Vinita Sharma</span></h1>
-
-        <p>
-            Flutter Developer passionate about creating modern,
-            scalable and beautiful mobile applications with smooth user experiences.
-        </p>
-
-        <a href="#projects" class="btn">View Projects</a>
-    </div>
-</header>
-
-<section>
-    <h2 class="title">About Me</h2>
-
-    <div class="cards">
-        <div class="card">
-            <h3>Mobile Development</h3>
-            <p>
-                Building high-performance Flutter applications
-                with clean architecture and responsive UI.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>UI/UX Design</h3>
-            <p>
-                Creating elegant and user-friendly interfaces
-                focused on performance and simplicity.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Backend Integration</h3>
-            <p>
-                Experience integrating REST APIs,
-                Firebase services and secure authentication systems.
-            </p>
-        </div>
-    </div>
-</section>
-
-<section>
-    <h2 class="title">Skills</h2>
-
-    <div class="skills">
-        <div class="skill">Flutter</div>
-        <div class="skill">Dart</div>
-        <div class="skill">Firebase</div>
-        <div class="skill">REST API</div>
-        <div class="skill">GitHub</div>
-        <div class="skill">Android</div>
-        <div class="skill">iOS</div>
-        <div class="skill">UI Design</div>
-    </div>
-</section>
-
-<section id="projects">
-    <h2 class="title">Projects</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>Investment Platform</h3>
-            <p>
-                Advanced investment and portfolio management app
-                with secure transactions and analytics dashboard.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>OnePass App</h3>
-            <p>
-                Offline secure credential manager designed
-                for privacy-focused authentication workflows.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Portfolio Website</h3>
-            <p>
-                Responsive personal portfolio hosted using GitHub Pages
-                with modern web design principles.
-            </p>
-        </div>
-
-    </div>
-</section>
-
-<section>
-    <h2 class="title">Contact</h2>
-
-    <div class="cards">
-        <div class="card">
-            <h3>Email</h3>
-            <p>vinitasharma2019.com</p>
-        </div>
-
-        <div class="card">
-            <h3>GitHub</h3>
-            <p>github.com/vinita75</p>
-        </div>
-
-        <div class="card">
-            <h3>Location</h3>
-            <p>Mumbai, India</p>
-        </div>
-    </div>
-</section>
-
-<footer>
-    © 2026 Vinita Sharma • All Rights Reserved
-</footer>
-
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
