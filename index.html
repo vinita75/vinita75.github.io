@@ -1,228 +1,268 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vinita Sharma | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+          margin:0;
+          padding:0;
+          box-sizing:border-box;
+          font-family:'Poppins',sans-serif;
+        }
+
+        body{
+          background:#0f172a;
+          color:white;
+          overflow-x:hidden;
+        }
+
+        header{
+          min-height:100vh;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          text-align:center;
+          padding:20px;
+          background:linear-gradient(135deg,#0f172a,#1e293b);
+        }
+
+        .hero{
+          max-width:800px;
+        }
+
+        .hero h1{
+          font-size:70px;
+          margin-bottom:15px;
+          font-weight:700;
+        }
+
+        .hero span{
+          color:#38bdf8;
+        }
+
+        .hero p{
+          font-size:20px;
+          color:#cbd5e1;
+          line-height:1.7;
+          margin-bottom:35px;
+        }
+
+        .btn{
+          display:inline-block;
+          padding:14px 32px;
+          background:#38bdf8;
+          color:#0f172a;
+          text-decoration:none;
+          border-radius:12px;
+          font-weight:600;
+          transition:0.3s;
+        }
+
+        .btn:hover{
+          transform:translateY(-3px);
+          background:#7dd3fc;
+        }
+
+        section{
+          padding:90px 10%;
+        }
+
+        .title{
+          font-size:38px;
+          margin-bottom:40px;
+          text-align:center;
+        }
+
+        .cards{
+          display:grid;
+          grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+          gap:25px;
+        }
+
+        .card{
+          background:#1e293b;
+          padding:30px;
+          border-radius:20px;
+          transition:0.3s;
+          border:1px solid rgba(255,255,255,0.05);
+        }
+
+        .card:hover{
+          transform:translateY(-8px);
+          background:#334155;
+        }
+
+        .card h3{
+          margin-bottom:15px;
+          color:#38bdf8;
+        }
+
+        .card p{
+          color:#cbd5e1;
+          line-height:1.7;
+        }
+
+        .skills{
+          display:flex;
+          flex-wrap:wrap;
+          justify-content:center;
+          gap:15px;
+        }
+
+        .skill{
+          padding:12px 20px;
+          background:#1e293b;
+          border-radius:50px;
+          border:1px solid rgba(255,255,255,0.08);
+        }
+
+        footer{
+          padding:30px;
+          text-align:center;
+          color:#94a3b8;
+          border-top:1px solid rgba(255,255,255,0.08);
+        }
+
+        @media(max-width:768px){
+
+          .hero h1{
+            font-size:42px;
+          }
+
+          .hero p{
+            font-size:16px;
+          }
+
+          .title{
+            font-size:30px;
+          }
+        }
+
+    </style>
 </head>
+
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Portfolio | Vinita Sharma&lt;/title&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>*{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin:0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-sizing:border-box;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>body{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:#0f172a;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>line-height:1.6;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>header{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>height:100vh;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex-direction:column;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content:center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items:center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align:center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:linear-gradient(135deg,#1e293b,#0f172a);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>header h1{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size:60px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom:10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>header p{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size:22px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:#cbd5e1;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.btn{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top:25px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:12px 24px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:#38bdf8;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:black;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration:none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius:8px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight:bold;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transition:0.3s;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.btn:hover{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:white;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>section{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:60px 10%;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>h2{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size:32px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom:20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:#38bdf8;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:#1e293b;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius:12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom:20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.skills{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex-wrap:wrap;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap:10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.skill{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:#38bdf8;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:black;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:10px 16px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius:30px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight:bold;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.projects{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:grid;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns:repeat(auto-fit,minmax(250px,1fr));</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap:20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.project{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:#1e293b;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius:12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transition:0.3s;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.project:hover{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transform:translateY(-5px);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align:center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:#020617;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:#94a3b8;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>a{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:#38bdf8;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Vinita Sharma&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Flutter Developer | Mobile &amp; Web App Developer&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a class="btn" href="mailto:vinitasharma2019@gmail.com"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>Contact Me</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;About Me&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>Flutter Developer with 3+ years of experience in building</p>
-<p class="p1"><span class="Apple-converted-space">        </span>mobile and web applications using Flutter and Dart.</p>
-<p class="p1"><span class="Apple-converted-space">        </span>Skilled in REST APIs, Firebase, WebSocket, and responsive UI development.</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Skills&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="skills"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="skill"&gt;Flutter&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="skill"&gt;Dart&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="skill"&gt;Firebase&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="skill"&gt;REST API&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="skill"&gt;WebSocket&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="skill"&gt;GitHub&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="skill"&gt;HTML&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="skill"&gt;CSS&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Projects&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="projects"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="project"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Ashika Trading App&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Trading platform developed using Flutter web.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;br/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://tradex.ashikagroup.com/#/login" target="_blank"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>View Project</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="project"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;TickPro Plus&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Flutter based trading web application.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;br/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://tickproplus.reliancesmartmoney.com/#/login" target="_blank"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>View Project</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="project"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;Pharmacy Management&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Medical shop management system project.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;br/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://github.com/vinitasharma298" target="_blank"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>GitHub</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Contact&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Email: vinitasharma2019@gmail.com&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;Location: Mumbai, India&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>GitHub:</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://github.com/" target="_blank"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>vinitasharma298</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>© 2026 Vinita Sharma | Portfolio Website</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<header>
+    <div class="hero">
+        <h1>Hi, I'm <span>Vinita Sharma</span></h1>
+
+        <p>
+            Flutter Developer passionate about creating modern,
+            scalable and beautiful mobile applications with smooth user experiences.
+        </p>
+
+        <a href="#projects" class="btn">View Projects</a>
+    </div>
+</header>
+
+<section>
+    <h2 class="title">About Me</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Mobile Development</h3>
+            <p>
+                Building high-performance Flutter applications
+                with clean architecture and responsive UI.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>UI/UX Design</h3>
+            <p>
+                Creating elegant and user-friendly interfaces
+                focused on performance and simplicity.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Backend Integration</h3>
+            <p>
+                Experience integrating REST APIs,
+                Firebase services and secure authentication systems.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="title">Skills</h2>
+
+    <div class="skills">
+        <div class="skill">Flutter</div>
+        <div class="skill">Dart</div>
+        <div class="skill">Firebase</div>
+        <div class="skill">REST API</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">Android</div>
+        <div class="skill">iOS</div>
+        <div class="skill">UI Design</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="title">Projects</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Investment Platform</h3>
+            <p>
+                Advanced investment and portfolio management app
+                with secure transactions and analytics dashboard.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>OnePass App</h3>
+            <p>
+                Offline secure credential manager designed
+                for privacy-focused authentication workflows.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>
+                Responsive personal portfolio hosted using GitHub Pages
+                with modern web design principles.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="title">Contact</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Email</h3>
+            <p>vinitasharma2019.com</p>
+        </div>
+
+        <div class="card">
+            <h3>GitHub</h3>
+            <p>github.com/vinita75</p>
+        </div>
+
+        <div class="card">
+            <h3>Location</h3>
+            <p>Mumbai, India</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Vinita Sharma • All Rights Reserved
+</footer>
+
 </body>
 </html>
